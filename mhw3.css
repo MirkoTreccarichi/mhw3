@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    font-size: 16px;
+    color: #11656b;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+header {
+    background-image: url(img/network-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.9);
+    height: 50px;
+    padding: 1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+footer {
+    padding: 1em;
+    height: 40px;
+    background-color: #18676d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 4px solid #11656b;
+    border-bottom: 4px solid #11656b;
+    text-transform: uppercase;
+    color: white;
+}
+
+section {
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1,
+header p {
+    font-weight: bold;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section#news div {
+    position: relative;
+    top: 10px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 0.2em solid silver;
+}
+
+section#news img {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+}
+
+section h1,
+section h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+section h1 {
+    width: 50%;
+    color: white;
+    font-size: 2em;
+}
+
+section h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+div.link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer #comp {
+    color: white;
+    font-size: 1.2em;
+}
+
+footer div {
+    margin: 0.1em;
+}
+
+.login {
+    background-color: rgba(167, 165, 165, 0.7);
+    border-radius: 1em;
+    padding: 0.4em 0.3em;
+    color: white;
+}
+
+a.button:hover {
+    color: #11656b;
+    background-color: rgb(167, 165, 165);
+}
+
+.link a {
+    margin: 15px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #11656b;
+    margin: 5px 0;
+}
+
+footer #logoimg {
+    height: 2em;
+    width: 3em;
+}
+
+div#promo {
+    justify-content: flex-start;
+}
+
+#social img {
+    height: 2em;
+    width: 2em;
+    margin: 0.3em;
+}
+
+#author p {
+    margin: 0.5em;
+}
+
+#bio {
+    color: greenyellow;
+    text-shadow: 2px 2px 1px rgb(5, 71, 5);
+    font-weight: bolder;
+}
+
+#logoimg {
+    height: 4em;
+    width: 6em;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#slogan h1 {
+    font-size: 3.5em;
+}
+
+#slogan h2 {
+    font-size: 2em;
+}
+
+#slogan {
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgb(11, 77, 51);
+}
+
+#author {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9em;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#comp {
+    font-family: 'Roboto Mono', 'Segoe UI', monospace;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#menu {
+    display: none;
+}
+
+@media (max-width: 810px) {
+    body {
+        font-size: 12px;
+    }
+    section div {
+        width: 500px;
+        height: 333px;
+    }
+    div.customerPoint {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    div.link {
+        display: none;
+    }
+    div#menu {
+        display: block;
+    }
+    section h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        justify-content: space-around;
+    }
+    section div {
+        width: 400px;
+        height: 266px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 10px;
+    }
+    .socialimg {
+        height: 1.5em;
+        width: 1.5em;
+    }
+}
+
+@media(max-width: 450px) {
+    section div {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+footer {
+    padding: 1em;
+    height: 40px;
+    background-color: #18676d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 4px solid #11656b;
+    border-bottom: 4px solid #11656b;
+    text-transform: uppercase;
+    color: white;
+}
+
+footer #comp {
+    color: white;
+    font-size: 1.2em;
+}
+
+footer div {
+    margin: 0.1em;
+}
+
+footer #logoimg {
+    height: 2em;
+    width: 3em;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#social img {
+    height: 2em;
+    width: 2em;
+    margin: 0.3em;
+}
+
+#author {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9em;
+}
+
+#author p {
+    margin: 0.5em;
+}
+
+
+/* CSS of the new section "poster" */
+
+div.titleCustomerPoint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customerPoint img {
+    width: inherit;
+}
+
+.titleCustomerPoint img {
+    height: 30px;
+    width: 30px;
+}
+
+div.customerPoint {
+    margin: 20px;
+    width: 250px;
+}
+
+#poster h1 {
+    color: #11656b;
+}
+
+.hidden {
+    display: none;
+}
+
+#poster h1,
+#poster h2,
+#poster h3,
+#poster h4,
+#poster h5 {
+    font-style: italic;
+}
+
+.selected {
+    display: none;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.city {
+    height: 180px;
+}
+
+
+/* MHW3 */
+
+section#apiNews div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+    border: groove 2.5px lightgrey;
+    border-radius: 5px;
+}
+
+section#apiNews div img {
+    width: 200px;
+}
+
+section#apiFinnhub div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: 5px;
+    padding: 5px;
+    border: groove 2.5px lightgrey;
+}
+
+section#apiFinnhub div img {
+    width: 40px;
+}
+
+section#apiFinnhub {
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.grid h1 {
+    color: unset;
+}
+
+section#apiNews {
+    padding: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.title {
+    font-style: italic;
+    text-align: center;
+    font-size: 3em;
+    margin: 1em;
+}
+
+section#apiNews div p {
+    font-family: 'Roboto Slab', serif;
+    padding: 5px;
+}
+
+div.choices {
+    flex-wrap: wrap;
+    padding: 50px;
+}
